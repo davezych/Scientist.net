@@ -52,7 +52,7 @@ let GetHomeDirectory =
 let GetDnvmHome =
     let homeDirectory =
         if buildServer = BuildServer.AppVeyor    
-            then "C:\Program Files (x86)\MSBuild\14.0\Bin\\"
+            then "C:\\Program Files\\Microsoft DNX\\Dnvm\\"
             else (GetHomeDirectory + "\\.dnx\\bin\\")
     
     homeDirectory
